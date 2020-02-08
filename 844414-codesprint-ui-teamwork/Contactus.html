@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <div>
+      <img src="logo4.png" class="rounded-circle" width="100px" height="100px">
+  </div>
+<div class="border">
+  <div  margin-left: 600px>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="pageee.html">home<span class="sr-only"></span></a>
+              <a class="nav-item nav-link" href="page2.html">placeAppointment</a>
+              <a class="nav-item nav-link" href="viewAppointment.html">viewAppointment</a>
+              <a class="nav-item nav-link" href="Contactus.html">Contactus</a>
+            </div>
+          </div>
+        
+          </nav>
+      </div>
+            
+</div>
+<span>
+  <div class="row">
+      <div class="col-lg-2">
+        <div  left: 10;width: 100px; height: 100%; ">
+          <ul>
+            <li><a href="Gallery"><i class="fas fa-stream" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Gallery</a></li>
+            <li><a href="Services"><i class="fas fa-stream" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Services</a></li>
+            <li><a href="Contact"><i class="fas fa-stream" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Contact</a></li>
+            <li><a href="Feedback"><i class="fas fa-stream" style="line-height: 65px;font-size: 20px;color: white;padding-left: 40px;"></i>Feedback</a></li>
+            
+        </ul>
+        </div>
+      </div>
+  </span>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    </style>
+    <script> 
+      function Contactus{ 
+          var name = document.forms["contact"]["firstname"];               
+          var email = document.forms["contact"]["lastname"];    
+          
+          if (firstname.value == "")                                  
+          { 
+              window.alert("Please enter your name."); 
+              firstname.focus(); 
+              return false; 
+          } 
+         
+          if (lastname.value == "")                               
+          { 
+            window.alert("Please enter your name."); 
+              lastname.focus(); 
+            return false; 
+            
+
+          } 
+             
+         
+         
+          return true; 
+      }</script> 
+    </head>
+    
+    <div>
+      <body style="background-color: darksalmon;">
+       
+      
+      <span>
+      <div  class="container">
+        <form action="saved.html" name="contact" onsubmit="Contactus()" method="post">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."required >
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">India</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      </div>
+      </span>
+      </body>
+    </div>
+      </html>
+    </body>
+</html>
